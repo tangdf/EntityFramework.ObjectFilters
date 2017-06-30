@@ -1,0 +1,16 @@
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.ObjectFilters.Test.dll.config
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.ObjectFilters.Test.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.ObjectFilters.Test.pdb
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.ObjectFilters.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.SqlServer.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\nunit.framework.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.ObjectFilters.pdb
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.xml
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\EntityFramework.SqlServer.xml
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\nunit.framework.xml
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\obj\Debug\EntityFramework.ObjectFilters.Test.csprojResolveAssemblyReference.cache
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\obj\Debug\EntityFramework.ObjectFilters.Test.dll
+I:\个人\MapExpression\EntityFramework.ObjectFilters.Test\obj\Debug\EntityFramework.ObjectFilters.Test.pdb
