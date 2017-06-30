@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using NUnit.Framework;
 
-namespace MapExpression.UnitTest
+namespace EntityFramework.ObjectFilters.Test
 {
     [TestFixture]
-    public class DataBaseTest: TestBase
+    public class DataBaseTest : TestBase
     {
-
         private TestContext _testContext;
 
-      
 
         [OneTimeSetUp]
         public void SetUp()
@@ -28,7 +21,6 @@ namespace MapExpression.UnitTest
             dbSet.AddRange(Item.All);
 
             _testContext.SaveChanges();
-
         }
 
         [OneTimeTearDown]

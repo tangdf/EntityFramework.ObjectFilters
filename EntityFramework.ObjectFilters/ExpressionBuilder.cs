@@ -33,8 +33,6 @@ namespace EntityFramework.ObjectFilters
 
         public Expression<Func<T, bool>> Build()
         {
-         
-
             _target = typeof(T);
             _filterType = _filter.GetType();
             _constantExpression = Expression.Constant(_filter, _filterType);
@@ -100,7 +98,6 @@ namespace EntityFramework.ObjectFilters
 
         private Expression Build(PropertyMap propertyMap)
         {
-
             Expression varExpression = Expression.Property(_constantExpression, propertyMap.SourceProperty);
 
             //Expression varExpression = Expression.Variable(value);

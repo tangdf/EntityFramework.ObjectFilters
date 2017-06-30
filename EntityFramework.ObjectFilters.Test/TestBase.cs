@@ -2,23 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using EntityFramework.ObjectFilters;
 using NUnit.Framework;
 
-namespace MapExpression.UnitTest
+namespace EntityFramework.ObjectFilters.Test
 {
-   public  abstract class TestBase
+    public abstract class TestBase
     {
         protected abstract IQueryable<Item> Items { get; }
 
         [Test]
         public void Demo()
         {
-
-            var filter = new Filter
-            {
+            var filter = new Filter {
                 Int = 1,
                 Array = new int[0],
                 List = new List<int>()
@@ -38,8 +33,7 @@ namespace MapExpression.UnitTest
             Assert.AreEqual(1, item.Int);
 
 
-            filter = new Filter
-            {
+            filter = new Filter {
                 String = "abcdefg",
                 Array = new int[0],
                 List = new List<int>()
@@ -57,14 +51,11 @@ namespace MapExpression.UnitTest
         }
 
 
-
         [Test]
         public void Array_Test_In()
         {
-
             //测试空数组，返回所有数据
-            var filter = new Filter
-            {
+            var filter = new Filter {
                 Array = new int[0],
                 List = new List<int>()
             };
@@ -72,12 +63,13 @@ namespace MapExpression.UnitTest
             Expression<Func<Item, bool>> expression = filter.ToExpression<Item>();
             var result = Items.Where(expression).ToList();
 
-    
 
             Assert.AreEqual(4, result.Count);
 
             // 
-            filter.Array = new int[] { 2 };
+            filter.Array = new int[] {
+                2
+            };
 
             expression = filter.ToExpression<Item>();
             result = Items.Where(expression).ToList();
@@ -88,26 +80,23 @@ namespace MapExpression.UnitTest
             Assert.AreEqual(2, item.Int);
 
 
-            filter.Array = new int[] { 2, 3 };
+            filter.Array = new int[] {
+                2,
+                3
+            };
 
             expression = filter.ToExpression<Item>();
             result = Items.Where(expression).ToList();
- 
+
             Assert.AreEqual(2, result.Count);
-
         }
-
-
-
 
 
         [Test]
         public void List_Test_In()
         {
-
             //测试空数组，返回所有数据
-            var filter = new Filter
-            {
+            var filter = new Filter {
                 Array = new int[0],
                 List = new List<int>()
             };
@@ -135,17 +124,14 @@ namespace MapExpression.UnitTest
             result = Items.Where(expression).ToList();
 
             Assert.AreEqual(2, result.Count);
-
         }
 
 
         [Test]
         public void Range_Test()
         {
-
             //测试空数组，返回所有数据
-            var filter = new Filter
-            {
+            var filter = new Filter {
                 StartDateTime = new DateTime(2010, 2, 2)
             };
 
@@ -164,15 +150,13 @@ namespace MapExpression.UnitTest
             var item = result[0];
 
             Assert.AreEqual(2, item.Int);
-
         }
 
 
         [Test]
         public void LikeTest()
         {
-            var filter = new Filter
-            {
+            var filter = new Filter {
                 Contains = "de"
             };
 
@@ -187,8 +171,7 @@ namespace MapExpression.UnitTest
             Assert.AreEqual(1, item.Int);
 
 
-            filter = new Filter
-            {
+            filter = new Filter {
                 StartsWith = "hij"
             };
 
@@ -203,8 +186,7 @@ namespace MapExpression.UnitTest
             Assert.AreEqual(2, item.Int);
 
 
-            filter = new Filter
-            {
+            filter = new Filter {
                 EndsWith = "xyz"
             };
 

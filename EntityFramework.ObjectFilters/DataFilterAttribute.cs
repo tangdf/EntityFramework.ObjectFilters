@@ -25,14 +25,6 @@ namespace EntityFramework.ObjectFilters
         }
 
 
-        //public DataFilterAttribute(string methodName)
-        //{
-        //    if (methodName == null)
-        //        throw new ArgumentNullException(nameof(methodName));
-
-        //    this.MethodName = methodName;
-        //}
-
         /// <summary>
         /// 获取两个字段位比较的类型。
         /// </summary>
@@ -42,12 +34,7 @@ namespace EntityFramework.ObjectFilters
         /// 获取或设置条件过滤对应的属性名。
         /// </summary>
         public string PropertyName { get; set; }
-
-
-        ///// <summary>
-        ///// 产生表达式的方法。
-        ///// </summary>
-        //public string MethodName { get; set; }
+     
     }
 
     /// <summary>

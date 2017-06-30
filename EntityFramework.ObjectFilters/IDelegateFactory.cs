@@ -5,13 +5,11 @@ using System.Reflection;
 namespace EntityFramework.ObjectFilters
 {
     public delegate object LateBoundPropertyGet(object target);
-    //public delegate object LateBoundFieldGet(object target);
 
     public interface IDelegateFactory
     {
         LateBoundPropertyGet CreateGet(PropertyInfo property);
 
-        //LateBoundFieldGet CreateGet(FieldInfo field);
     }
 
 

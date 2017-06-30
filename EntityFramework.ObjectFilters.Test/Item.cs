@@ -1,13 +1,12 @@
-namespace MapExpression.UnitTest
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace EntityFramework.ObjectFilters.Test
+{
     [Table("Item")]
-    public  class Item
+    public class Item
     {
         public int ItemId { get; set; }
 
@@ -42,5 +41,4 @@ namespace MapExpression.UnitTest
             },
         };
     }
- 
 }

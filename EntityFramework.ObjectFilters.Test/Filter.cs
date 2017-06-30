@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using EntityFramework.ObjectFilters;
 
-namespace MapExpression.UnitTest
+namespace EntityFramework.ObjectFilters.Test
 {
     public class Filter
     {
@@ -24,7 +23,6 @@ namespace MapExpression.UnitTest
 
         [IgnoreFilter]
         public int? IgnoreInt { get; set; }
-
 
 
         [DataFilter(ComparisonType.Contains, PropertyName = nameof(Item.String))]

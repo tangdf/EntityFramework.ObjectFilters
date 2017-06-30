@@ -5,15 +5,6 @@ namespace EntityFramework.ObjectFilters
 {
     internal class PropertyMap
     {
-        //public PropertyMap(PropertyInfo sourceProperty, PropertyInfo targetProperty , ComparisonType comparisonType,bool isEnumerable,Type propertyType)
-        //{
-        //    SourceProperty = sourceProperty;
-        //    TargetProperty = targetProperty;
-        //    ComparisonType = comparisonType;
-        //    SourceGetter = sourceProperty.ToMemberGetter();
-        //    IsEnumerable = isEnumerable;
-        //    PropertyType = propertyType;
-        //}
 
         public Type PropertyType { get; set; }
 
